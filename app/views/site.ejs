@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="futclub">
+    
+    <head>
+	
+        <meta charset="utf-8" />
+        <title>HOME</title>
+        <link rel="stylesheet" type="text/css" href="/branding/css/futclub.css">
+		<script type="text/javascript">
+
+			  window.fbAsyncInit = function() {
+				FB.init({
+				  appId      : '184471455247996',
+				  xfbml      : true,
+				  version    : 'v2.5'
+				});
+			  };
+
+			  (function(d, s, id){
+				 var js, fjs = d.getElementsByTagName(s)[0];
+				 if (d.getElementById(id)) {return;}
+				 js = d.createElement(s); js.id = id;
+				 js.src = "//connect.facebook.net/en_US/sdk.js";
+				 fjs.parentNode.insertBefore(js, fjs);
+			   }(document, 'script', 'facebook-jssdk'));
+
+			if (window.location.hash == '#_=_') {
+			window.location.hash = '';
+			}
+		</script>
+    </head>
+    
+    <body>
+        <div ng-view></div>
+
+                <script src="vendor/jquery/dist/jquery.min.js"></script>
+                <script src="vendor/angular/angular.js"></script>
+                <script src="vendor/angular-route/angular-route.js"></script>
+                <script src="vendor/angular-resource/angular-resource.js"></script>
+                <script src="js/main.js"></script> 
+                <script src="js/controllers/MainController.js"></script>
+                <script src="/js/services/User.js"></script>
+				<script src="js/services/Language.js"></script>
+				<script src="js/services/InterceptorService.js"></script>
+				<script src="/js/services/Language.js"></script>
+				<script src="/js/services/Facebook.js"></script>
+				<script src="/js/services/Twitter.js"></script>
+				<script src="/vendor/ngAutocomplete/ngAutocomplete.js"></script>
+    </body>
+	
+</html>
+

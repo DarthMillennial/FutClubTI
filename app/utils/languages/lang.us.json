@@ -1,0 +1,25 @@
+{
+	"menu":{
+		"lb_home": "futclub",
+		"lb_howwork": "How Work",
+		"lb_team": "Team",
+		"lb_contact": "Contact"
+	},
+	"login": {
+		"lb_title": "Start Now!",
+		"lb_desc_bold01": "create",
+		"lb_desc01": "soccer matches",
+		"lb_desc_bold02": "invite",
+		"lb_desc02": "your friends",
+		"lb_desc_bold03": "pay",
+		"lb_desc03": "by application",
+		"lb_login": "Username",
+		"lb_password": "Password",
+		"txt_login": "Write your username or email",
+		"txt_password": "Write your password",
+		"btn_login":"Log in",
+		"btn_signup": "Sign up",
+		"btn_facebook_login": "Log in with Facebook",
+		"btn_twitter_login": "Log in with Twitter"
+	}
+}

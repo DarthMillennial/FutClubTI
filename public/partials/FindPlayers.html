@@ -1,0 +1,21 @@
+﻿<div class="main-title">Encontrar Jogadores</div>
+<div class="find-players-full">
+    <input type="text" class="find-players-by-position" ng-click="positionFilter()" />
+    <div id="find-players-map" class="find-players-map" players-map></div>
+    <div class="find-players-view">
+        <div class="find-players-element">
+            <img ng-src='{{find_players_image}}' class="find-players-image" />
+            <div class="find-players-name" ng-bind='find_players_name'></div>
+            <div class="find-players-positions" ng-bind='find_players_positions'></div>
+            <div class="find-players-city" ng-bind='find_players_city'></div>
+            <div class="find-players-invoke" ng-click="summonPlayer()" style="display:none;"><span>Convocar</span></div>
+            <div class="find-players-add" ng-click="inviteAddFriends('confirmar','deseja enviar um pedido de amizade?');" style="display:none;"><span>Fazer Amizade</span></div>
+        </div>
+    </div>
+    </div>
+<div class="find-players-back"></div>
+    
+    
+<script src="/vendor/markerclusterer/markerclusterer.js"></script>
+<script src="/vendor/ngAutocomplete/ngAutocomplete.js"></script>
+<script src="/vendor/infobox/infobox.js"></script>

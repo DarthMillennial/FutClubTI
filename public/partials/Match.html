@@ -1,0 +1,44 @@
+<div class="main-title" >Partidas</div>
+<div class="mat-background" ng-init="userFriendsObject()">
+    <div>
+        <div class="mat-element-search-players">
+            <div>
+                <div class="mat-background-search-friends">
+                    <input ng-model="searchFriends" type="text" class="mat-search-friends"
+                           id="txtSearchFriends" name="txtSearchFriends" placeholder="Convoque Seus Amigos" />
+
+                    <div class="mat-element-selected-players" id="{{sel.id}}" ng-repeat="sel in friends | filter:searchFriends" ng-click="selectFriend(sel.id)">
+                        <img ng-src="{{ sel.image }}" class="left mat-player-radius"></img>
+                        <span class="mat-element-player-name">{{ sel.name }}</span>
+                        <br />
+                        <span class="mat-element-player-provider">{{ sel.provider }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input type="text" class="mat-search-soccer-field" id="txtSearchAdress" name="txtSearchAdress" placeholder="Digite um ponto de partida"
+               ng-autocomplete="resultMapsSearch" details="resultMapsDetails" options="resultMapsOptions" />
+        <div id="mymap" class="mat-maps" match-map>
+        </div>
+
+    </div>
+</div>
+
+<!--<script src="/js/map.js"></script>-->
+
+<script src="/vendor/markerclusterer/markerclusterer.js"></script>
+<script src="/vendor/ngAutocomplete/ngAutocomplete.js"></script>
+<script src="/vendor/infobox/infobox.js"></script>
+<script src="/vendor/jquery-datetimepicker/jquery-datetimepicker-min.js"></script>
+<link rel="stylesheet" type="text/css" href="/branding/css/jquery-datetimepicker.css">
+
+<script>
+    $(document).ready(function () {
+        $('.my-location-date').mask('00/00/0000');
+        $('.my-location-hour').mask('00:00');
+    });
+
+  
+</script>
+

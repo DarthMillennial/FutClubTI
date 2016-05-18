@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html ng-app="futclub">
+    
+    <head>
+        <title>SISTEMA</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="/branding/css/futclub.css">
+		<link rel="stylesheet" type="text/css" href="/vendor/bxslider/jquery.bxslider.css">
+        <script src="https://platform.twitter.com/widgets.js"></script>
+        <script src="http://connect.facebook.net/en_US/all.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+        <script src="/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="/vendor/angular/angular.js"></script>
+        <script src="/vendor/angular-route/angular-route.js"></script>
+        <script src="/vendor/angular-resource/angular-resource.js"></script>
+        <script src="/vendor/ngAutocomplete/ngAutocomplete.js"></script>
+        <script src="/vendor/jquery-mask/jquery-mask.js"></script>
+		<script src="/vendor/bxslider/jquery.bxslider.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/services/User.js"></script>
+        <script src="/js/services/InterceptorService.js"></script>
+        <script src="/js/services/Language.js"></script>
+        <script src="/js/services/Facebook.js"></script>
+        <script src="/js/services/Twitter.js"></script>
+        <script src="/js/controllers/MainController.js"></script>
+        <script src="/js/directives/map.js"></script>
+        <script src="/js/directives/FindPlayersMap.js"></script>
+
+</script>
+        <script>
+            FB.init({
+            				appId: '184471455247996',
+            				status: true,
+            				cookie: true,
+            				xfbml: true,
+            				xfbml: true,
+            				version: 'v2.5'
+            			});
+            
+                $(document).ready(function () {
+                    
+                    $('.profile-circle').toggle("slow");
+                    
+                    setTimeout(function (){
+                        $('.profile-mini').animate({ opacity: "show" }, 1000);
+                    }, 1000);
+                    
+                    $('.profile-circle').mouseover(function () {
+                        $('.profile-submenu').fadeIn();
+                    });
+                    
+                    $('.profile-submenu').mouseleave(function () {
+                        $('.profile-submenu').fadeOut();
+                    });
+                    
+                });
+        </script>
+    </head>
+    
+    <body>
+        <div class="main-background"></div>
+        <div class="logo" onclick="pageLoadFade();"></div>
+        <div class="main-title-division"></div>
+        <div class="profile-main">
+            <div class="profile-mini" style="display:none">
+                <span class="playerTitle">
+                    <%=user%>
+                </span>
+            </div>
+            <img src=<%=profileImage%> class="profile-circle" style="display:none;"></img>
+            <div class="profile-submenu">
+                <a href="/logout"><span ng-click="UserLogout();">Sair</span></a>
+            </div>
+        </div>
+        <div ng-view></div>
+    </body>
+
+</html>
+<script>
+    function pageLoadFade(){
+            
+            var htmlContent = "<div class='main-page-load-background' style='display:none'>"
+                + "<div class='main-page-load'>"
+                  + "<div class='main-page-load-logo' style='display:none'></div>"
+                    +"<span class='main-page-load-title' style='display:none'>fut.club - produto licenciado</span>"
+                    +"<p class='main-page-load-desc01' style='display:none'>o nome fut.club e o logo estão protegidos por copy ritght."
+                        +"<br>todos os direitos são reservados - 2016.</p>"
+                    +"<p class='main-page-load-desc02' style='display:none'>Para mais informações, acesse: www.futclubapp.com</p>"
+                    +"<span class='main-page-load-name' style='display:none'>F U T . C L U B</span>"
+                    +"<span class='main-page-load-loading' style='display:none'>carregando...</span>"
+                +"</div>"
+            "</div>"
+            
+            $('body').prepend(htmlContent);
+            
+            $('.main-page-load-background').fadeIn();
+    
+    		setTimeout(function(){
+    			$('.main-page-load-logo').fadeIn();
+    		}, 500)
+    
+    		setTimeout(function(){
+    			$('.main-page-load-title').fadeIn();
+    		}, 1000)
+    
+    		setTimeout(function(){
+    			$('.main-page-load-desc01').fadeIn();
+    		}, 2000)
+    		
+    		setTimeout(function(){
+    			$('.main-page-load-desc02').fadeIn();
+    		}, 4000)
+    
+    		setTimeout(function(){
+    			$('.main-page-load-name').fadeIn();
+    			$('.main-page-load-loading').fadeIn();
+    		}, 6000)
+    
+    		setTimeout(function(){
+    			pageLoadFadeOut();
+    		}, 8000)
+        }
+    	function pageLoadFadeOut(){
+    	$('.main-page-load-logo').fadeOut();
+    			$('.main-page-load-title').fadeOut();
+    			$('.main-page-load-desc01').fadeOut();
+    			$('.main-page-load-desc02').fadeOut();
+    			$('.main-page-load-background').fadeOut();
+    			$('.main-page-load-name').fadeOut();
+    			$('.main-page-load-loading').fadeOut();
+    	}
+</script>

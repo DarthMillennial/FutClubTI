@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html ng-app="futclub">
+    
+    <head>
+	
+        <meta charset="utf-8" />
+        <title>REGISTER</title>
+        <link rel="stylesheet" type="text/css" href="/branding/css/futclub.css">
+        <script src="https://platform.twitter.com/widgets.js"></script>
+        <script src="http://connect.facebook.net/en_US/all.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+        <script src="/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="/vendor/angular/angular.js"></script>
+        <script src="/vendor/angular-route/angular-route.js"></script>
+        <script src="/vendor/angular-resource/angular-resource.js"></script>
+        <script src="/vendor/ngAutocomplete/ngAutocomplete.js"></script>
+        <script src="/vendor/jquery-mask/jquery-mask.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/services/User.js"></script>
+        <script src="/js/services/InterceptorService.js"></script>
+        <script src="/js/services/Language.js"></script>
+        <script src="/js/services/Facebook.js"></script>
+        <script src="/js/services/Twitter.js"></script>
+        <script src="/js/controllers/MainController.js"></script>
+        <script src="/js/directives/map.js"></script>
+        <script src="/js/directives/FindPlayersMap.js"></script>
+    </head>
+    
+    <body>
+	<div class="rg-header">
+		<div class="rg-logo centralize"></div>
+		<span class="rg-login">Entrar <div class="rg-select-down-login"></div></span>
+		<span class="rg-language">Idioma: Português PT-BR <div class="rg-select-down-language"></div></span>
+		
+	</div>
+	<div class="rg-main">
+		<div ng-view></div> 
+	</div>
+	<div class="rg-background-image"></div>
+               
+    </body>
+	
+</html>
+

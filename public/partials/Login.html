@@ -1,0 +1,53 @@
+<div class="menu-background">
+    <div class="menu-span">
+        <span class="menu-home"> {{ language.menu.lb_home }}</span>
+        <span class="menu-how-work"> {{ language.menu.lb_howwork }}</span>
+        <span class="menu-team"> {{ language.menu.lb_team }}</span>
+        <span class="menu-contact"> {{ language.menu.lb_contact }}</span>
+    </div>
+</div>
+<div class="lg-background-image">
+    <div class="lg-background-color">
+        <div class="lg-shield"></div>
+        <div class="lg-logo "></div>
+        <div>
+            <div class="lg-title">
+                {{ language.login.lb_title }}
+                <div style="margin-top: 3vw;">
+                    <div class="lg-desc"><span class="lg-desc-bold">{{ language.login.lb_desc_bold01 }}</span><span style="float:left">{{ language.login.lb_desc01 }},</span><br /></div>
+                    <div class="lg-desc"><span class="lg-desc-bold">{{ language.login.lb_desc_bold02 }}</span><span style="float:left">{{ language.login.lb_desc02 }},</span><br /></div>
+                    <div class="lg-desc"><span class="lg-desc-bold">{{ language.login.lb_desc_bold03 }}</span><span style="float:left">{{ language.login.lb_desc03 }}</span></div>
+                </div>
+                <div class="watch-video">
+                    <span>Assista ao vídeo</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <form action="/login" method="post" class="form-lg">
+                <div class="form-log-line">
+                    <span>{{ language.login.lb_login }} :</span><input type="text" name="username" id="username">
+                </div>
+                <div class="form-log-line">
+                    <span>{{ language.login.lb_password }} :</span><input type="password" name="password" id="password">
+                </div>
+                <div class="form-log-line" style=" padding-top: 1vw;">
+                    <input class="signup" type="button" value="Cadastre-se" ng-click="ShowView('register')">
+                    <input class="btnEnter" type="submit" value="Entrar">
+                </div>
+                <br>
+                <br>
+            </form>
+            <br>
+            <br>
+            <div class="social-lg">
+                <a href="/oauth/facebook">
+                    <div class="bt-facebook">Entre com Facebook</div>
+                </a>
+                <a href="/oauth/twitter">
+                    <div class="bt-twitter">Entre com Twitter</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

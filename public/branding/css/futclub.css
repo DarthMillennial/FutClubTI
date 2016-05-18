@@ -1,0 +1,1704 @@
+@font-face {
+    font-family: built titling bd it;
+    src: url("/branding/fonts/built titling bd it.ttf");
+}
+
+@font-face {
+    font-family: built titling bd;
+    src: url("/branding/fonts/built titling bd.ttf");
+}
+
+@font-face {
+    font-family: built titling el it;
+    src: url("/branding/fonts/built titling el it.ttf");
+}
+
+@font-face {
+    font-family: built titling el;
+    src: url("/branding/fonts/built titling el.ttf");
+}
+
+@font-face {
+    font-family: built titling lt it;
+    src: url("/branding/fonts/built titling lt it.ttf");
+}
+
+@font-face {
+    font-family: built titling ltt;
+    src: url("/branding/fonts/built titling lt.ttf");
+}
+
+@font-face {
+    font-family: built titling rg itt;
+    src: url("/branding/fonts/built titling rg it.ttf");
+}
+
+@font-face {
+    font-family: built titling rg;
+    src: url("/branding/fonts/built titling rg.ttf");
+}
+
+@font-face {
+    font-family: built titling sb it;
+    src: url("/branding/fonts/built titling sb it.ttf");
+}
+
+@font-face {
+    font-family: built titling sb;
+    src: url("/branding/fonts/built titling sb.ttf");
+}
+
+@font-face {
+    font-family: SoccerII;
+    src: url("/branding/fonts/SoccerII.otf");
+}
+
+body {
+    display: table;
+    margin: 0 auto;
+    width: 95vw;
+    background-color: #f0f0f0;
+    letter-spacing: 1px;
+}
+
+textarea {
+    resize: none;
+}
+
+    textarea:focus, input:focus {
+        outline: 0;
+    }
+
+button:focus {
+    outline: 0;
+}
+
+.centralize {
+    display: table;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+/* NAVIGATION MENU */
+.menu-background {
+    font-family: built titling rg;
+    font-size: 2vw;
+    width: 95vw;
+    height: 12vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    color: #690985;
+    letter-spacing: 2px;
+}
+
+.menu-span {
+    display: table;
+    margin: 0 auto;
+    margin-top: 1vw;
+}
+
+.menu-home {
+    float: left;
+    padding-right: 5vw;
+}
+
+.menu-how-work {
+    float: left;
+    padding-right: 5vw;
+}
+
+.menu-team {
+    float: left;
+    padding-right: 5vw;
+}
+
+.menu-contact {
+    float: left;
+    padding-right: 5vw;
+}
+
+.menu-home:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu-how-work:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu-team:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu-contact:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* END NAVIGATION MENU */
+
+/* LOGIN SITE */
+
+.lg-background-color {
+    /*background-image: url("/branding/img/Tlogin/full-login.png");
+    background-repeat: no-repeat;*/
+    background-color: rgba(105,9,133,0.9);
+    width: 95vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+}
+
+.lg-background-image {
+    width: 95vw;
+    height: 100vh;
+    background-image: url("/branding/img/background-register.png");
+    position: absolute;
+    z-index: 1;
+}
+
+.lg-shield {
+    background-image: url("/branding/img/lg-shield.png");
+    width: 58vw;
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 57vw;
+}
+
+.form-lg {
+    font-family: built titling rg;
+    color: white;
+    width: 33vw;
+    position: relative;
+    z-index: 3;
+    display: table;
+    margin: 0 auto;
+    top: 15vw;
+}
+
+.form-log-line {
+    clear: both;
+}
+
+.form-lg span {
+    font-family: built titling el;
+    font-size: 5vh;
+    padding-right: 1vh;
+    float: left;
+    margin-left: 5vw;
+    z-index: 3;
+}
+
+.form-lg input[type="text"] {
+    color: #7d139c;
+    font-size: 2vh;
+    height: 4vh;
+    width: 18vw;
+    z-index: 3;
+    float: right;
+    margin-right: 4vw;
+}
+
+.form-lg input[type="password"] {
+    color: #7d139c;
+    font-size: 2vh;
+    height: 4vh;
+    width: 18vw;
+    z-index: 3;
+    float: right;
+    margin-right: 4vw;
+}
+
+.form-lg input[type="submit"], input[type="button"] {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    float: right;
+    cursor: pointer;
+    font-size: 4vh;
+    z-index: 3;
+}
+
+    .form-lg input[type="submit"]:hover {
+        opacity: 0.7;
+    }
+
+.social-lg {
+    position: relative;
+    top: 14vw;
+    /* left: 40vh; */
+    /* width: 30vw; */
+    /* margin: 0px; */
+    z-index: 3;
+    display: table;
+    margin: 0 auto;
+}
+
+.bt-facebook {
+    font-family: built titling rg;
+    text-align: center;
+    line-height: 5vh;
+    position: relative;
+    width: 11vw;
+    height: 5vh;
+    float: left;
+    background-color: #3B5998;
+    color: #ffffff;
+    border-radius: 15px 15px;
+    z-index: 3;
+    font-size: 1vw;
+}
+
+    .bt-facebook:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+.bt-twitter {
+    font-family: built titling rg;
+    text-align: center;
+    line-height: 5vh;
+    position: relative;
+    width: 11vw;
+    height: 5vh;
+    float: left;
+    background-color: #00aced;
+    color: #ffffff;
+    border-radius: 15px 15px;
+    margin-left: 2vh;
+    z-index: 3;
+    font-size: 1vw;
+}
+
+    .bt-twitter:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+.signup {
+    font-family: built titling rg;
+    font-size: 2vw;
+    float: left;
+    position: relative;
+    color: #fff !important;
+    background-color: #56076d !important;
+    border: 0px;
+    padding: 8px;
+    border-radius: 20px 20px;
+    width: 15vw;
+    z-index: 3;
+}
+
+    .signup:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+.btnEnter {
+    font-family: built titling rg;
+    font-size: 2vw;
+    float: left;
+    position: relative;
+    color: #690985 !important;
+    background-color: #fff !important;
+    border: 0px;
+    padding: 8px;
+    border-radius: 20px 20px;
+    width: 15vw;
+    margin-right: 2vw;
+}
+
+    .btnEnter:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+.lg-logo {
+    background-image: url("/branding/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    width: 21vw;
+    height: 27vh;
+    top: 12vw;
+    position: relative;
+    left: 19vw;
+    z-index: 3;
+    background-size: 20vw;
+}
+
+    .lg-logo:hover {
+        cursor: pointer;
+    }
+
+.lg-title {
+    font-family: built titling rg;
+    text-align: center;
+    line-height: 3vw;
+    color: #caf715;
+    font-size: 8vw;
+    float: right;
+    margin-top: 5vw;
+    margin-right: 3vw;
+}
+
+.lg-desc {
+    font-family: built titling el;
+    font-size: 45px;
+    color: #fff;
+    clear: both;
+    float: left !important;
+    padding-bottom: 5px;
+    letter-spacing: 4px;
+}
+
+.lg-desc-bold {
+    font-family: built titling rg;
+    font-size: 100%;
+    color: #fff;
+    margin-right: 10px;
+    float: left;
+}
+/* ---> END LOGIN WINDOW*/
+
+/* REGISTER WINDOW */
+.rg-window {
+    margin-left: 440px;
+    padding-top: 78px;
+}
+
+.rg-header {
+    width: 1300px;
+    height: 80px;
+    background-color: #fff;
+    position: relative;
+}
+
+.rg-logo {
+    background-image: url("/branding/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 131px;
+    position: absolute;
+    left: 500px;
+    top: 20px;
+    z-index: 100;
+}
+
+    .rg-logo:hover {
+        cursor: pointer;
+    }
+
+.rg-main {
+    width: 1300px;
+    height: 587px;
+    background-color: rgba(105,9,133,0.9);
+    position: relative;
+    z-index: 2;
+}
+
+.rg-background-image {
+    width: 1300px;
+    height: 587px;
+    background-image: url("/branding/img/background-register.png");
+    position: absolute;
+    margin-top: -587px;
+    z-index: 1;
+}
+
+.rg-form input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+    .rg-form input[type="radio"] {
+        font-family: built titling el;
+        float: left;
+        width: 60px;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+.rg-form label {
+    font-family: built titling el;
+    font-size: 35px;
+    color: #fff;
+}
+
+.rg-btn-register {
+    font-family: built titling rg;
+    font-size: 2vw;
+    position: relative;
+    color: #690985 !important;
+    background-color: #fff !important;
+    border: 0px;
+    padding: 8px;
+    border-radius: 20px 20px;
+    width: 15vw;
+    margin-left: 40px;
+}
+
+    .rg-btn-register:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+.rg-text {
+    font-family: built titling rg;
+    font-size: 15px;
+    color: #fff;
+}
+
+.rg-text-green {
+    font-family: built titling rg;
+    font-size: 15px;
+    color: #caf715;
+}
+
+.rg-social {
+    position: absolute;
+    margin-left: 20px;
+    width: 50vh;
+    margin: 0px;
+}
+
+.rg-language {
+    font-family: built titling rg;
+    font-size: 15px;
+    color: #690985;
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.rg-login {
+    font-family: built titling rg;
+    font-size: 15px;
+    color: #690985;
+    float: right;
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+.rg-select-down-login {
+    width: 20px;
+    height: 10px;
+    background-image: url("/branding/img/select-down.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: right;
+    margin-left: 10px;
+    margin-top: 4px;
+    background-size: 15px;
+}
+
+.rg-select-down-language {
+    width: 20px;
+    height: 10px;
+    background-image: url("/branding/img/select-down.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-size: 15px;
+}
+
+/* END REGISTER WINDOW */
+
+/* ---> MAIN WINDOW*/
+.logo {
+    background-image: url("/branding/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 20vh;
+    position: absolute;
+    width: 178px;
+    height: 118px;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    float: left;
+}
+
+    .logo:hover {
+        cursor: pointer;
+    }
+
+.main-title-division {
+    width: 1px;
+    height: 13vh;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 25vh;
+    margin-top: 3vh;
+}
+
+.main-title {
+    font-family: built titling rg;
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    margin-left: 28vh;
+    margin-top: 5vh;
+}
+
+.playerTitle {
+    font-family: built titling ltt;
+    font-size: 2vw;
+    color: #fff;
+    float: right;
+    margin-right: 1vw;
+}
+
+.main-background {
+    background-image: url("/branding/img/background-main.png");
+    background-repeat: no-repeat;
+    width: 95vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.profile-mini {
+    background-image: url("/branding/img/profile-mini.png");
+    background-repeat: no-repeat;
+    background-size: 25vw;
+    width: 25vw;
+    height: 58px;
+    position: absolute;
+}
+
+.profile-main {
+    position: absolute;
+    margin-left: 63vw;
+    margin-top: 4vw;
+}
+
+.profile-circle {
+    border-radius: 50%;
+    width: 6vw;
+    height: 6vw;
+    background-repeat: no-repeat;
+    background-size: 6vw;
+    /*background-color: #000;*/
+    position: absolute;
+    margin-left: 24.5vw;
+    margin-top: -1.5vw;
+    z-index: 100;
+}
+
+    .profile-circle:hover {
+        cursor: pointer;
+    }
+
+.profile-submenu {
+    font-family: built titling rg;
+    font-size: 2vw;
+    color: #690985;
+    width: 13vw;
+    height: 3vw;
+    background-color: white;
+    float: right;
+    position: absolute;
+    margin-top: 3vw;
+    margin-left: 13vw;
+    z-index: 1;
+    border-radius: 70px 6px;
+    text-align: center;
+    display: none;
+    color: #690985;
+}
+
+    .profile-submenu a {
+        color: #690985;
+    }
+
+    .profile-submenu span:hover {
+        cursor: pointer;
+    }
+
+.centralize {
+    margin: 0 auto;
+    display: table;
+}
+
+.metro-main {
+    width: 84%;
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 6%;
+}
+
+.metro-01 {
+    font-family: built titling rg;
+    width: 40vw;
+    height: 20vw;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    float: left;
+}
+
+    .metro-01:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #690985;
+    }
+
+.metro-02 {
+    font-family: built titling rg;
+    width: 40vw;
+    height: 9vw;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    float: left;
+    margin-left: 5vh;
+}
+
+    .metro-02:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #690985;
+    }
+
+.metro-03 {
+    font-family: built titling rg;
+    width: 40vw;
+    height: 9vw;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    margin-left: 5vh;
+    float: left;
+    margin-top: 4vh;
+}
+
+    .metro-03:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #690985;
+    }
+
+.metro-04 {
+    font-family: built titling rg;
+    width: 40vw;
+    height: 9vw;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    float: left;
+    margin-top: 4vh;
+    clear: both;
+}
+
+    .metro-04:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #690985;
+    }
+
+.metro-05 {
+    font-family: built titling rg;
+    width: 19vw;
+    height: 9vw;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    margin-left: 4vh;
+    float: left;
+    margin-top: 4vh;
+}
+
+    .metro-05:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #690985;
+    }
+
+.metro-06 {
+    font-family: built titling rg;
+    width: 40vw;
+    height: 9vw;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    margin-left: 5vh;
+    float: left;
+    margin-top: 4vh;
+}
+
+    .metro-06:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #690985;
+    }
+
+.metro-title {
+    font-size: 4vw;
+    color: #fff;
+    padding: 1vw;
+}
+
+.metro-titlev2 {
+    font-size: 4vw;
+    color: #fff;
+    padding: 1vw;
+    padding-bottom: 0;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.metro-desc {
+    font-size: 1.3vw;
+    color: #fff;
+    padding: 1vw;
+}
+
+/* ---> MAIN MATCH WINDOW*/
+
+.watch-video {
+    width: 10vw;
+    height: 6vh;
+    background-color: #30043d;
+    clear: both;
+    z-index: 100;
+    font-family: built titling rg;
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+    .watch-video:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    .watch-video span {
+    }
+
+/* MATCH */
+.mat-background {
+    width: 95vw;
+    height: 81vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    margin-top: 19vh;
+}
+
+.mat-element {
+    display: table;
+    margin: 0 auto;
+}
+
+.mat-maps {
+    width: 100%;
+    height: 74vh;
+    display: table;
+}
+
+.mat-element-search-players {
+    width: 25vw;
+    height: 74vh;
+    margin-left: 1vw;
+    background-color: rgba(255,255,255,0.9);
+    float: left;
+    /* overflow-y: scroll; */
+    position: absolute;
+    z-index: 100;
+    right: 0px;
+    top: 3.4vw;
+}
+
+.mat-search-soccer-field {
+    width: 45vw;
+    height: 4vh;
+    font-size: 14px;
+    color: #690985;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+
+.mat-background-search-friends {
+    position: fixed;
+    background-color: rgba(255,255,255,0.9);
+    padding-bottom: 1vw;
+    width: 25vw;
+    height: 8vh;
+}
+
+.mat-search-friends {
+    width: 80%;
+    height: 4vh;
+    font-size: 14px;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+    margin-top: 1vw;
+}
+
+.mat-element-selected-players {
+    float: left;
+    margin-top: 3vw;
+    padding-left: 1vw;
+    width: 11vw;
+}
+
+    .mat-element-selected-players:hover {
+        cursor: pointer;
+        filter: alpha(opacity=40);
+        -moz-opacity: 0.4;
+        -khtml-opacity: 0.4;
+        opacity: 0.4;
+    }
+
+.mat-element-selected-players-active {
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.4;
+    -khtml-opacity: 0.4;
+    opacity: 0.4;
+}
+
+.mat-element-selected-players span {
+    font-family: built titling rg;
+    color: #690985;
+    margin-top: 1.5vw;
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+
+.mat-player-radius {
+    width: 4vw;
+    border-radius: 50px;
+}
+
+.mat-autocomplete-search-friends span {
+    margin-left: 1vw;
+    margin-top: 2vw;
+    position: absolute;
+}
+
+/* GOOGLE MAPS */
+.my-location {
+    background-image: url("/branding/img/MatchWithoutRent-Background.gif");
+    background-repeat: no-repeat;
+    width: 73.5% !important;
+    height: 100%;
+    font-family: built titling sb;
+    font-size: 14px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    z-index: 101;
+    position: relative;
+    background-size: 100%;
+}
+
+.my-location-form {
+    display: table;
+    margin: 0 auto;
+    width: 50%;
+}
+
+    .my-location-form p {
+        letter-spacing: 3px;
+        font-size: 3.5vw;
+        display: table;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+.my-location .private-match {
+    letter-spacing: 3px;
+    font-size: 1.5vw;
+    display: table;
+    margin: 0 auto;
+}
+
+.my-location input[type="text"] {
+    width: 94%;
+    margin-bottom: 5px !important;
+    margin-top: 5px;
+    height: 1.5vw;
+    margin-bottom: -4%;
+    padding: 1vw;
+}
+
+.my-location input[type="radio"] {
+    float: left;
+    margin-left: 4vw;
+}
+
+.my-location textarea {
+    width: 99%;
+    display: table;
+    margin: 0 auto;
+    height: 8vw;
+}
+
+.my-location button {
+    width: 50%;
+    background-color: #690985;
+    border: 0;
+    color: #fff;
+    font-size: 2vw;
+    font-family: built titling rg;
+    letter-spacing: 2px;
+    border-top: 1px solid #fff;
+    margin-top: 5px;
+}
+
+    .my-location button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+.soccer-fields-location {
+    background-image: url("/branding/img/MatchWithRent-Background.gif");
+    background-repeat: no-repeat;
+    width: 73.5% !important;
+    height: 100%;
+    font-family: built titling rg;
+    font-size: 14px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    z-index: 101;
+    position: relative;
+    background-size: 100%;
+}
+
+    .soccer-fields-location textarea {
+        display: table;
+        margin: 0 auto;
+        width: 57%;
+        position: relative;
+    }
+
+.soccer-fields-location-header {
+    display: table;
+    margin: 0 auto;
+    padding: 0.3vw;
+}
+
+    .soccer-fields-location-header p {
+        font-family: built titling sb;
+        font-size: 3vw;
+        letter-spacing: 1px;
+        display: table;
+        margin: 0 auto;
+    }
+
+.soccer-fields-location-features {
+    font-family: built titling sb;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    display: table;
+    margin: 0 auto;
+}
+
+.soccer-fields-location-field {
+    display: table;
+    margin: 0 auto;
+}
+
+.soccer-fields-location-image-hour {
+    display: table;
+    margin: 0 auto;
+    padding: 1vw;
+}
+
+.soccer-fields-location-image {
+    width: 25vw;
+    height: 35.8vh;
+    /*background-color: #000;*/
+    float: left;
+    margin-top: 0px !important;
+}
+
+    .soccer-fields-location-image li {
+        width: 23.4vw !important;
+    }
+
+.soccer-fields-location-dateHour {
+    float: left;
+}
+
+.soccer-fields-location-title {
+    font-family: built titling rg;
+    font-size: 3vw;
+    display: table;
+    margin: 0 auto;
+}
+
+.soccer-fields-location-price {
+    font-family: built titling rg;
+    font-size: 2vw;
+    color: #fff;
+    letter-spacing: 1px;
+    /* float: right; */
+    bottom: 0px;
+    position: relative;
+    /* margin-top: -2vw; */
+    margin-right: 2vw;
+    position: absolute;
+    right: 0px;
+    margin-bottom: 1vw;
+}
+
+.soccer-fields-location button {
+    width: 50%;
+    background-color: #690985;
+    border: 0;
+    color: #fff;
+    font-size: 2vw;
+    font-family: built titling rg;
+    letter-spacing: 2px;
+    border-top: 1px solid #fff;
+}
+
+    .soccer-fields-location button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+
+/* FIM GOOGLE MAPS */
+
+/* CUSTOM JQUERY-DATETIMEPICKER*/
+
+.xdsoft_datetimepicker xdsoft_noselect xdsoft_ xdsoft_inline {
+}
+
+.xdsoft_datetimepicker {
+    border: 1px solid #690985 !important;
+    margin-top: 1vw;
+}
+
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+        background: #690985 !important;
+        box-shadow: #690985 0 1px 3px 0 inset !important;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+        background: #bdea08 !important;
+    }
+/* END CUSTOM JQUERY-DATETIMEPICKER*/
+
+/* FIND MATCHES*/
+.find-players-full {
+    width: 95vw;
+    height: 81vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    margin-top: 19vh;
+}
+
+.find-players-by-position {
+    width: 45vw;
+    height: 4vh;
+    font-size: 14px;
+    color: #690985;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+
+.find-players-map {
+    width: 100%;
+    height: 74vh;
+    display: table;
+}
+
+.find-players-view {
+    width: 25vw;
+    height: 74vh;
+    margin-left: 1vw;
+    background-color: rgba(255,255,255,0.9);
+    float: left;
+    /* overflow-y: scroll; */
+    position: absolute;
+    z-index: 100;
+    right: 0px;
+    top: 3.4vw;
+}
+/* END FIND MATCHES*/
+
+
+
+/* FIND MATCHES*/
+.find-matches-full {
+    width: 95vw;
+    height: 81vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    margin-top: 19vh;
+}
+
+.find-matches-by-position {
+    width: 45vw;
+    height: 4vh;
+    font-size: 14px;
+    color: #690985;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+
+.find-matches-map {
+    width: 100%;
+    height: 74vh;
+    display: table;
+}
+
+.find-matches-view {
+    width: 25vw;
+    height: 74vh;
+    margin-left: 1vw;
+    background-color: rgba(255,255,255,0.9);
+    float: left;
+    /* overflow-y: scroll; */
+    position: absolute;
+    z-index: 100;
+    right: 0px;
+    top: 3.4vw;
+}
+/* END FIND MATCHES*/
+
+.main-page-load {
+    width: 100vw;
+    height: 100vh;
+    background-color: #690985;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
+
+.main-page-load-background {
+    background-image: url("/branding/img/player-child.jpg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: 100vw 100vh;
+    z-index: 101;
+}
+
+.main-page-load-title {
+    font-family: built titling sb;
+    font-size: 3vw;
+    color: #fff;
+    position: relative;
+    margin-left: 36vw;
+}
+
+.main-page-load-desc01 {
+    font-family: built titling rg;
+    font-size: 1.5vw;
+    color: #fff;
+    
+    width: 45vw;
+    position: relative;
+    float: right;
+    margin-top: 0vw;
+    margin-right: 19vw;
+}
+
+.main-page-load-desc02 {
+    font-family: built titling rg;
+    font-size: 1.5vw;
+    color: #fff;
+    width: 45vw;
+    position: relative;
+    float: right;
+    margin-top: -1vw;
+    margin-right: 19vw;
+}
+
+.main-page-load-name {
+    font-family: built titling sb;
+    font-size: 4vw;
+    color: #fff;
+    position: relative;
+    top: 16vw;
+    right: 0vw;
+}
+
+.main-page-load-loading {
+    font-family: built titling rg;
+    font-size: 1vw;
+    color: #fff;
+    letter-spacing: 3px;
+    position: relative;
+    top: 18vw;
+    right: 7vw;
+}
+
+.main-page-load-logo {
+    background-image: url("/branding/img/logo.png");
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 27vh;
+    top: 14vw;
+    position: relative;
+    left: 19vw;
+    z-index: 3;
+    background-size: 13vw;
+}
+
+/* FUT.CLUB POPUP */
+.fut-club-alert {
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.fut-club-alert-title {
+    font-family: built titling rg;
+    font-size: 7vw;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+}
+
+.fut-club-alert-msg {
+    font-family: built titling rg;
+    font-size: 2vw;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+    letter-spacing: 3px;
+}
+
+.fut-club-alert-close {
+    font-family: built titling rg;
+    font-size: 3vw;
+    color: #fff;
+    bottom: 0px;
+    position: absolute;
+    background-color: #5f0985;
+    width: 100%;
+    text-align: center;
+}
+
+    .fut-club-alert-close:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+.fut-club-alert-yellow {
+    background-image: url("/branding/img/yellow-card.png");
+    background-repeat: no-repeat;
+    background-size: 15vw;
+    width: 20%;
+    height: 39%;
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.fut-club-alert-green {
+    background-image: url("/branding/img/green-card.png");
+    background-repeat: no-repeat;
+    background-size: 15vw;
+    width: 20%;
+    height: 39%;
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+/* ALERT YES NO */
+.fut-club-alert-background-yesno {
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
+
+.fut-club-alert-yesno {
+    width: 50vw;
+    height: 60vh;
+    background-color: #fff;
+    display: table;
+    margin: 0 auto;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10vw;
+}
+
+.fut-club-alert-yesno-cancel {
+    width: 50%;
+    height: 10vh;
+    background-color: #690985;
+    color: #fff;
+    float: left;
+    margin-top: 3vw;
+}
+
+    .fut-club-alert-yesno-cancel:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .fut-club-alert-yesno-cancel span {
+        font-family: built titling rg;
+        font-size: 2vw;
+        display: table;
+        margin: 0 auto;
+        margin-top: 1vw;
+    }
+
+.fut-club-alert-yesno-confirm {
+    width: 50%;
+    height: 10vh;
+    background-color: #690985;
+    color: #fff;
+    float: left;
+    margin-top: 3vw;
+}
+
+    .fut-club-alert-yesno-confirm:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .fut-club-alert-yesno-confirm span {
+        font-family: built titling rg;
+        font-size: 2vw;
+        display: table;
+        margin: 0 auto;
+        margin-top: 1vw;
+    }
+
+.fut-club-alert-yesno-title {
+    font-family: built titling rg;
+    font-size: 7vw;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+    margin-top: 5vw;
+}
+
+.fut-club-alert-yesno-msg {
+    font-family: built titling rg;
+    font-size: 2vw;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+    letter-spacing: 3px;
+}
+/* END ALERT YES NO */
+/* END FUT.CLUB POPUP */
+
+/*  FIND PLAYERS */
+.find-players-image {
+    width: 10vw;
+    border-radius: 50%;
+    display: table;
+    margin: 0 auto;
+}
+
+.find-players-element {
+    display: table;
+    margin: 0 auto;
+    margin-top: 7vw;
+}
+
+.find-players-name {
+    font-family: built titling rg;
+    font-size: 1.5vw;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+}
+
+.find-players-positions {
+    font-family: built titling rg;
+    font-size: 1.5vw;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+}
+
+.find-players-city {
+    font-family: built titling rg;
+    font-size: 1.5vw;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+}
+
+.find-players-invoke {
+    margin-top: 1vw;
+    margin: 0 auto;
+    width: 10vw;
+    height: 5vh;
+    background-color: #690985;
+    color: #fff;
+}
+
+    .find-players-invoke:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .find-players-invoke span {
+        display: table;
+        margin: 0 auto;
+        font-family: built titling rg;
+        font-size: 1.5vw;
+        margin-top: 1vw;
+        padding-top: 0.3vw;
+    }
+
+.find-players-add {
+    margin-top: 1vw;
+    margin: 0 auto;
+    width: 10vw;
+    height: 5vh;
+    background-color: #690985;
+    color: #fff;
+}
+
+    .find-players-add:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .find-players-add span {
+        display: table;
+        margin: 0 auto;
+        font-family: built titling rg;
+        font-size: 1.5vw;
+        margin-top: 1vw;
+        padding-top: 0.3vw;
+    }
+
+.fut-club-summon-player-background {
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
+
+.fut-club-summon-player {
+    width: 50vw;
+    height: 70vh;
+    background-color: #fff;
+    display: table;
+    margin: 0 auto;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10vw;
+}
+
+.fut-club-summon-player-title {
+    font-family: built titling rg;
+    font-size: 2.5vw;
+    color: #690985;
+    display: table;
+    margin: 0 auto;
+    margin-top: 1vw;
+}
+
+.fut-club-summon-player-cancel {
+    width: 100%;
+    height: 10vh;
+    background-color: #690985;
+    color: #fff;
+    float: left;
+    margin-top: 1vw;
+}
+
+    .fut-club-summon-player-cancel:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .fut-club-summon-player-cancel span {
+        font-family: built titling rg;
+        font-size: 2vw;
+        display: table;
+        margin: 0 auto;
+        margin-top: 1vw;
+    }
+
+.fut-club-summon-player-matches {
+    width: 50vw;
+    height: 45vh;
+    margin-top: 15px;
+}
+
+.fut-club-summon-player-match {
+    width: 100%;
+    height: 10vh;
+    color: #690985;
+    float: left;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #a0a0a0;
+}
+
+    .fut-club-summon-player-match span {
+        font-family: "Gotham SSm A","Gotham SSm B","Helvetica Neue",sans-serif;
+        padding: 10px;
+    }
+
+.fut-club-summon-player-match-date {
+    width: 15%;
+    font-size: 1vw;
+    float: left;
+    color: #a0a0a0;
+}
+
+.fut-club-summon-player-match-local {
+    width: 55%;
+    font-size: 1vw;
+    float: left;
+    color: #404040;
+}
+
+.fut-club-summon-player-match-hour {
+    width: 15%;
+    font-size: 1vw;
+    float: left;
+    color: #404040;
+    clear: both;
+    padding: 0px 10px !important;
+}
+
+.fut-club-summon-player-match-confirm {
+    width: 5vw;
+    height: 5vh;
+    float: right;
+    margin-right: 2vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+
+    .fut-club-summon-player-match-confirm:hover {
+        cursor: pointer;
+        opacity: 0.4;
+    }
+
+.fut-club-find-players-positions {
+    width: 45vw;
+    height: 4vh;
+    background-color: #000;
+    z-index: 101;
+    position: absolute;
+}
+/* END FIND PLAYERS*/
+
+/* FUT CLUB PAYMENT */
+.fut-club-payment-background {
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.fut-club-payment {
+    width: 50vw;
+    height: 60vh;
+    background-color: #fff;
+    display: table;
+    margin: 0 auto;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10vw;
+}
+
+.fut-club-payment-title {
+    font-family: built titling sb;
+    font-size: 3vw;
+    color: #191919;
+    display: table;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.fut-club-payment-data {
+    float: left;
+    width: 80%;
+    padding: 2vw;
+}
+
+    .fut-club-payment-data p {
+        font-family: built titling rg;
+        font-size: 1.5vw;
+        float: left;
+        position: relative;
+        clear: both;
+        margin: 0px;
+        letter-spacing: 2px;
+        padding: 0.8vw;
+    }
+
+    .fut-club-payment-data input[type="text"] {
+        float: right;
+        width: 65%;
+        padding: 0.8vw;
+    }
+
+.fut-club-payment-form button {
+    width: 50%;
+    background-color: #690985;
+    border: 0;
+    color: #fff;
+    font-size: 2vw;
+    font-family: built titling rg;
+    letter-spacing: 2px;
+    border-top: 1px solid #fff;
+    margin-top: 5px;
+}
+
+    .fut-club-payment-form button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+.fut-club-payment-cards {
+    display: table;
+    margin: 0 auto;
+}
+
+    .fut-club-payment-cards p {
+        font-family: built titling rg;
+        letter-spacing: 2px;
+        display: table;
+        margin: 0 auto;
+    }
+
+    .fut-club-payment-cards span {
+        font-family: built titling rg;
+    }
+/* FUT CLUB END PAYMENT */

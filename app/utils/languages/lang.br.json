@@ -1,0 +1,25 @@
+{
+	"menu":{
+		"lb_home": "futclub",
+		"lb_howwork": "Como Funciona",
+		"lb_team": "Time",
+		"lb_contact": "Contato"
+	},
+	"login": {
+		"lb_title": "Comece Agora!",
+		"lb_desc_bold01": "organize",
+		"lb_desc01": "partidas de futebol",
+		"lb_desc_bold02": "convide",
+		"lb_desc02": "seus amigos",
+		"lb_desc_bold03": "pague",
+		"lb_desc03": "pela aplicação",
+		"lb_login": "Usuário",
+		"lb_password": "Senha",
+		"txt_login": "Digite seu usuário ou email",
+		"txt_password": "Digite sua senha",
+		"btn_login":"Entrar",
+		"btn_signup": "Inscreva-se",
+		"btn_facebook_login": "Entre com Facebook",
+		"btn_twitter_login": "Entre com Twitter"
+	}
+}
